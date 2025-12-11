@@ -8,6 +8,8 @@
 ## 📄 Descripción del Proyecto
 La **Cifosis** es una curvatura anormal de la columna vertebral. Este proyecto analiza un conjunto de datos de pacientes sometidos a cirugía de columna para identificar factores de riesgo que predicen la presencia de esta condición post-operatoria.
 
+<img scr="/images\image_1.png>" alt="" width="600"/>
+
 El objetivo principal es comparar la eficacia de un modelo interpretable (**Decision Tree**) frente a un modelo de ensamble (**Random Forest**) en un escenario de datos pequeños y desbalanceados.
 
 ## 📂 Estructura del Repositorio
@@ -35,9 +37,7 @@ El objetivo principal es comparar la eficacia de un modelo interpretable (**Deci
 ## 📉 Visualización del Árbol
 Aquí se muestra la estructura de decisiones aprendida por el modelo simple:
 
-<img src="./images/arbol_decision.png" alt="Árbol de Decisión" width="800"/>
-
-*(Nota: Si no has guardado la imagen del árbol en la carpeta images, puedes generarla en el notebook y guardarla)*
+<img src="/images/arbol_decision.png" alt="Árbol de Decisión" width="800"/>
 
 ## 🚀 Conclusiones
 El uso de **Random Forest** demostró ser superior para limpiar el "ruido" y evitar falsas alarmas. Sin embargo, para uso clínico real, se recomienda aplicar técnicas de balanceo de datos (SMOTE) para mejorar la detección de casos positivos.
