@@ -10,7 +10,47 @@ La **Cifosis** es una curvatura anormal de la columna vertebral. Este proyecto a
 
 <img src="images/kyphosis.png" alt="Kyphosis" width="800"/>
 
+
+Se recopilaron datos de 83 pacientes sometidos a cirugía espinal correctiva. El objetivo fue determinar los factores de riesgo importantes para la cifosis después de la cirugía.
+
+Los factores de riesgo son la edad en años, el nivel vertebral inicial de la cirugía y el número de niveles involucrados.
+
+El dataset kyphosis contiene 81 filas y 4 columnas. Representa datos de niños que han tenido intervenciones quirúrgicas a la columna. El dataset contiene las siguientes columnas:
+
+*Entradas*
+
+- Age: edad en meses.
+- Number: el número de vértebras involucradas.
+- Start: el número de la primera vértebra operada.
+
+*Salida*
+- Kyphosis: vatiable categórica con valores present o absent que indica si se desarrolló kyphosis después de la operación
+
 El objetivo principal es comparar la eficacia de un modelo interpretable (**Decision Tree**) frente a un modelo de ensamble (**Random Forest**) en un escenario de datos pequeños y desbalanceados.
+
+Se desarrollaron los siguientes puntos
+
+1. Análisis exploratorio de los datos:
+
+    • ¿Qué porcentaje de la muestra presenta cifosis?
+
+    • ¿Cuál es la edad promedio de niños con cifosis?
+
+2. Ajustar un árbol de decisión
+
+3. Evaluar el performance
+
+4. Accuracy:
+
+    • Sensibilidad
+
+    • Especificidad
+    
+    • ¿Afecta el desbalance?
+
+5. Creación de un gráfico del árbol ajustado
+6. Realizar un modelo con Árboles Aleatorios
+7. Evaluar el performance ¿Qué se observa?
 
 ## 📂 Estructura del Repositorio
 *   `data/`: Contiene el dataset `kyphosis.csv`.
@@ -33,11 +73,6 @@ El objetivo principal es comparar la eficacia de un modelo interpretable (**Deci
 *   **Resultado:** Mejoró significativamente la robustez.
 *   **Accuracy:** 76% (Mejora de +20 puntos).
 *   **Observación Crítica:** Logró eliminar completamente los **Falsos Positivos** (Especificidad del 100%), pero mantuvo la misma sensibilidad baja para detectar la enfermedad debido a la falta de datos positivos en el entrenamiento.
-
-## 📉 Visualización del Árbol
-Aquí se muestra la estructura de decisiones aprendida por el modelo simple:
-
-<img src="/images/arbol_decision.png" alt="Árbol de Decisión" width="800"/>
 
 ## 🚀 Conclusiones
 El uso de **Random Forest** demostró ser superior para limpiar el "ruido" y evitar falsas alarmas. Sin embargo, para uso clínico real, se recomienda aplicar técnicas de balanceo de datos (SMOTE) para mejorar la detección de casos positivos.
