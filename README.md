@@ -43,5 +43,5 @@ Aquí se muestra la estructura de decisiones aprendida por el modelo simple:
 El uso de **Random Forest** demostró ser superior para limpiar el "ruido" y evitar falsas alarmas. Sin embargo, para uso clínico real, se recomienda aplicar técnicas de balanceo de datos (SMOTE) para mejorar la detección de casos positivos.
 
 ---
-*Autor: [Alejandro Barrenechea]*
+*Autor: Alejandro Barrenechea*
 *Dataset: Kyphosis Data*
