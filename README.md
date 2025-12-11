@@ -79,4 +79,5 @@ El uso de **Random Forest** demostró ser superior para limpiar el "ruido" y evi
 
 ---
 *Autor: Alejandro Barrenechea*
+
 *Dataset: Kyphosis Data*
