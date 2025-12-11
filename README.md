@@ -8,7 +8,7 @@
 ## 📄 Descripción del Proyecto
 La **Cifosis** es una curvatura anormal de la columna vertebral. Este proyecto analiza un conjunto de datos de pacientes sometidos a cirugía de columna para identificar factores de riesgo que predicen la presencia de esta condición post-operatoria.
 
-<img scr="/images/kyphosis.png>" alt="Kyphosis" width="600"/>
+<img src="images/kyphosis.png" alt="Kyphosis" width="600"/>
 
 El objetivo principal es comparar la eficacia de un modelo interpretable (**Decision Tree**) frente a un modelo de ensamble (**Random Forest**) en un escenario de datos pequeños y desbalanceados.
 
